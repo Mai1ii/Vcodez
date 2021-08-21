@@ -15,4 +15,13 @@
 > # Credit 
 [vcodes](https://vcodes.xyz/)
 
+> # Whats new In Vcodez.xyz?
+
+- Colored Buttons
+- Better Syatem
+- EMBEDS
+- Emojis
+- Lots and LOTS Of Cmds
+- And Much much, more!
+
 
