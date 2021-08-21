@@ -1,20 +1,21 @@
 
         module.exports = {
             bot: {
-                token: "", // Bot List Bot Token
-                prefix: "",
+                token: process.env.BTOKEN, 
+ // Bot List Bot Token
+                prefix: "+",
                 owners: [""],
-                mongourl: "",
+                mongourl: process.env.MONGO,
                 servers: {
-                    token: "", // Server List Bot Token
-                    prefix: ""
+                    token: process.env.STOKEN, // Server List Bot Token
+                    prefix: "+"
                 }
             },
         
             website: {
-                callback: "",
-                secret: "",
-                clientID: "", // Bot client id.
+                callback: process.env.CALLBACK, //Login Call Back, Example: https://vcodez.xyz/callback
+                secret: process.env.SECRET, //Bot Secret Id.
+                clientID: process.env.CLIENTID, // Bot client id.
                 tags: [ "Moderation", "Fun", "Minecraft","Economy","Guard","NSFW","Anime","Invite","Music","Logging", "Web Dashboard", "Reddit", "Youtube", "Twitch", "Crypto", "Leveling", "Game", "Roleplay", "Utility", "Turkish" ],
                 languages: [
                     { flag: 'gb', code: 'en', name: 'English' },
@@ -132,7 +133,8 @@
         
             server: {
                 id: "",
-                invite: "https://discord.gg/z7dBzygse4",
+                invite: "",
+                dblinvite: "",
     roles: {
       yonetici: "",
       manager: "",
@@ -144,6 +146,7 @@
       site_creator: "",
       administrator: "",
       moderator: "",
+      premiumuser: "",
       profile: {
         sitecreator:"",
         booster: "",
@@ -167,22 +170,23 @@
         ownerserver: "",
         developer: "",
         certified_developer: "",
-        boosted_developer: ""
+        boosted_developer: "",
         promoted_developer: "",
-        premium_developer: "",
+        premium_developer: "", // premium server owner role id
         bot: "",
         boosted_bot: "",
         promoted_bot: "",
         certified_bot: ""
       }
     },
-    channels: {
-      codelog: "",
-      login: "",
-      webstatus: "",
-      uptimelog: "",
-      botlog: "",
-      votes: ""
+                channels: {
+                    codelog: "",
+                    login: "",
+                    webstatus: "",
+                    uptimelog: "",
+                    botlog: "",
+                    votes: "",
+                    reportlog: ""
     }
   }
 
