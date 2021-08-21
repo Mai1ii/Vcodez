@@ -4,7 +4,7 @@
                 token: process.env.BTOKEN, 
  // Bot List Bot Token
                 prefix: "+",
-                owners: [""],
+                owners: ["693553429380857978", "751159519190450186"],
                 mongourl: process.env.MONGO,
                 servers: {
                     token: process.env.STOKEN, // Server List Bot Token
@@ -132,9 +132,9 @@
             },
         
             server: {
-                id: "",
-                invite: "",
-                dblinvite: "",
+                id: "860627883731320862",
+                invite: "https://discord.gg/4McmCFMqc6",
+                dblinvite: "https://discord.com/api/oauth2/authorize?client_id=863104463229550612&permissions=8&redirect_uri=https%3A%2F%2Fvcodez.xyz%2Fcallback&scope=bot",
     roles: {
       yonetici: "",
       manager: "",
